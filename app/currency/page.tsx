@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import { auth, db } from "@/lib/firebase";
-import { onAuthStateChanged, signOut, User } from "firebase/auth";
+import { auth, db, signOutUser } from "@/lib/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 import { collection, onSnapshot } from "firebase/firestore";
 
 import Sidebar from "@/components/Sidebar";
@@ -14,10 +14,8 @@ import {
   ArrowRightLeft,
   TrendingUp,
   TrendingDown,
-  DollarSign,
   Globe,
   Wallet,
-  Coins,
   ShieldCheck,
   Zap,
   Info,
@@ -140,7 +138,7 @@ export default function CurrencyPage() {
 
   const handleSignOut = async () => {
     try {
-      await signOut(auth);
+      await signOutUser();
       window.location.href = "/signin";
     } catch (error) {
       console.error("Error signing out:", error);

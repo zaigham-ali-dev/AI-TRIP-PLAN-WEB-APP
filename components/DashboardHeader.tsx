@@ -14,15 +14,13 @@ import {
   Compass,
   Building2,
   Sparkles,
-  Info,
 } from "lucide-react";
-import { auth, db } from "@/lib/firebase";
+import { auth, db, signOutUser } from "@/lib/firebase";
 import { onAuthStateChanged, User } from "firebase/auth";
 import {
   collection,
   onSnapshot,
   query,
-  orderBy,
   limit,
 } from "firebase/firestore";
 import {
@@ -32,6 +30,7 @@ import {
   clearAllNotifications,
 } from "@/lib/notifications";
 import CommandPalette from "@/components/CommandPalette";
+import type { LucideIcon } from "lucide-react";
 
 interface DashboardHeaderProps {
   userName?: string;
@@ -40,10 +39,32 @@ interface DashboardHeaderProps {
   onToggleMobileMenu?: () => void;
 }
 
-function formatNotificationTime(timestamp: any): string {
+function getNotificationDate(timestamp: AppNotification["createdAt"]): Date | null {
+  if (!timestamp) return null;
+  if (timestamp instanceof Date) return timestamp;
+  if (typeof timestamp === "string" || typeof timestamp === "number") return new Date(timestamp);
+  if (typeof timestamp.toDate === "function") return timestamp.toDate();
+  return null;
+}
+
+function getNotificationTime(timestamp: AppNotification["createdAt"]): number {
+  if (
+    timestamp &&
+    typeof timestamp === "object" &&
+    "toMillis" in timestamp &&
+    typeof timestamp.toMillis === "function"
+  ) {
+    return timestamp.toMillis();
+  }
+
+  return getNotificationDate(timestamp)?.getTime() || 0;
+}
+
+function formatNotificationTime(timestamp: AppNotification["createdAt"]): string {
   if (!timestamp) return "Just now";
   try {
-    const date = timestamp.toDate ? timestamp.toDate() : new Date(timestamp);
+    const date = getNotificationDate(timestamp);
+    if (!date || Number.isNaN(date.getTime())) return "Recently";
     const now = new Date();
     const diffMs = now.getTime() - date.getTime();
     const diffMins = Math.floor(diffMs / 60000);
@@ -62,7 +83,7 @@ function formatNotificationTime(timestamp: any): string {
 
 const NOTIFICATION_ICONS: Record<
   string,
-  { icon: any; bg: string; text: string }
+  { icon: LucideIcon; bg: string; text: string }
 > = {
   budget_alert: {
     icon: AlertTriangle,
@@ -119,8 +140,8 @@ export default function DashboardHeader({
   // Real-time Notifications Listener from Firestore
   useEffect(() => {
     if (!currentUser) {
-      setNotifications([]);
-      return;
+      const clearNotifications = window.setTimeout(() => setNotifications([]), 0);
+      return () => window.clearTimeout(clearNotifications);
     }
 
     const notifColRef = collection(db, "users", currentUser.uid, "notifications");
@@ -140,8 +161,8 @@ export default function DashboardHeader({
 
         // Client-side sort by createdAt descending
         loaded.sort((a, b) => {
-          const timeA = a.createdAt?.toMillis ? a.createdAt.toMillis() : (a.createdAt ? new Date(a.createdAt).getTime() : 0);
-          const timeB = b.createdAt?.toMillis ? b.createdAt.toMillis() : (b.createdAt ? new Date(b.createdAt).getTime() : 0);
+          const timeA = getNotificationTime(a.createdAt);
+          const timeB = getNotificationTime(b.createdAt);
           return timeB - timeA;
         });
 
@@ -416,9 +437,18 @@ export default function DashboardHeader({
               {/* Sign Out Action */}
               <div className="p-1.5">
                 <button
-                  onClick={() => {
+                  onClick={async () => {
                     setProfileOpen(false);
-                    if (onSignOut) onSignOut();
+                    if (onSignOut) {
+                      onSignOut();
+                    } else {
+                      try {
+                        await signOutUser();
+                        window.location.href = "/signin";
+                      } catch (err) {
+                        console.error("Sign out error:", err);
+                      }
+                    }
                   }}
                   className="w-full flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-[13px] font-semibold text-red-600 hover:bg-red-50 transition-colors cursor-pointer text-left"
                 >

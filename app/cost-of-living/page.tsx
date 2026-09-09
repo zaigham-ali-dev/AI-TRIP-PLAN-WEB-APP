@@ -3,13 +3,13 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { auth } from "@/lib/firebase";
-import { onAuthStateChanged, signOut, User } from "firebase/auth";
+import { auth, signOutUser } from "@/lib/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 
 import Sidebar from "@/components/Sidebar";
 import DashboardHeader from "@/components/DashboardHeader";
+import type { LucideIcon } from "lucide-react";
 import {
-  Coins,
   Search,
   MapPin,
   Utensils,
@@ -197,7 +197,7 @@ const CITIES: CityData[] = [
 
 const COST_INDEX_CONFIG: Record<
   string,
-  { bg: string; text: string; border: string; icon: any }
+  { bg: string; text: string; border: string; icon: LucideIcon }
 > = {
   "Budget Friendly": {
     bg: "bg-emerald-50",
@@ -255,7 +255,7 @@ export default function CostOfLivingPage() {
 
   const handleSignOut = async () => {
     try {
-      await signOut(auth);
+      await signOutUser();
       window.location.href = "/signin";
     } catch (error) {
       console.error("Error signing out:", error);

@@ -3,8 +3,8 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { auth, db } from "@/lib/firebase";
-import { onAuthStateChanged, signOut, User } from "firebase/auth";
+import { auth, db, signOutUser } from "@/lib/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 import {
   collection,
   onSnapshot,
@@ -61,7 +61,6 @@ export default function TripsPage() {
   const [expenses, setExpenses] = useState<ExpenseItem[]>([]);
   const [isAddTripOpen, setIsAddTripOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedFilter, setSelectedFilter] = useState("all");
 
   const router = useRouter();
 
@@ -171,7 +170,7 @@ export default function TripsPage() {
 
   const handleSignOut = async () => {
     try {
-      await signOut(auth);
+      await signOutUser();
       window.location.href = "/signin";
     } catch (error) {
       console.error("Error signing out:", error);

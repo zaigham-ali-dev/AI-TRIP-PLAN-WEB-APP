@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { X, Building2, MapPin, Calendar, DollarSign, BedDouble, CheckCircle } from "lucide-react";
+import { getErrorMessage } from "@/lib/errorUtils";
 
 export interface AccommodationItem {
   id?: string;
@@ -110,8 +111,8 @@ export default function AddAccommodationModal({
       setRoomType("Deluxe Suite");
       setStatus("Confirmed");
       onClose();
-    } catch (err: any) {
-      setError(err?.message || "Failed to add accommodation booking.");
+    } catch (err: unknown) {
+      setError(getErrorMessage(err, "Failed to add accommodation booking."));
     } finally {
       setLoading(false);
     }
@@ -238,7 +239,7 @@ export default function AddAccommodationModal({
               </label>
               <select
                 value={status}
-                onChange={(e) => setStatus(e.target.value as any)}
+                onChange={(e) => setStatus(e.target.value as typeof status)}
                 disabled={loading}
                 className="w-full h-11 px-3 bg-slate-50/70 border border-slate-200/80 rounded-xl text-[13.5px] text-slate-800 font-medium focus:bg-white focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/10 transition-all disabled:opacity-60 cursor-pointer"
               >

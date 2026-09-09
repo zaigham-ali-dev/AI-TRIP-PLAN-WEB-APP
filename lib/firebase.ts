@@ -1,5 +1,5 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, signOut as firebaseSignOut } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -16,4 +16,21 @@ const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-export { app, auth, db };
+/**
+ * Robust sign-out function invoking Firebase signOut(auth) and clearing session caches.
+ */
+export const signOutUser = async () => {
+  try {
+    await firebaseSignOut(auth);
+    if (typeof window !== "undefined") {
+      sessionStorage.clear();
+      localStorage.removeItem("user_session");
+      localStorage.removeItem("auth_user");
+    }
+  } catch (error) {
+    console.error("Error during Firebase signOut:", error);
+    throw error;
+  }
+};
+
+export { auth, db };

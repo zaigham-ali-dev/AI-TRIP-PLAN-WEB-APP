@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { auth, db } from "@/lib/firebase";
-import { onAuthStateChanged, signOut, User } from "firebase/auth";
+import { auth, db, signOutUser } from "@/lib/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { createNotification } from "@/lib/notifications";
 
@@ -16,7 +16,6 @@ import {
   Calendar,
   Zap,
   Globe,
-  Coffee,
   Compass,
   Palmtree,
   PartyPopper,
@@ -208,7 +207,7 @@ export default function AiPlannerPage() {
 
   const handleSignOut = async () => {
     try {
-      await signOut(auth);
+      await signOutUser();
       window.location.href = "/signin";
     } catch (error) {
       console.error("Error signing out:", error);

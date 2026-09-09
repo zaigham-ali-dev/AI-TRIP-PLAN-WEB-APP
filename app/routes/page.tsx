@@ -3,8 +3,8 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
-import { auth, db } from "@/lib/firebase";
-import { onAuthStateChanged, signOut, User } from "firebase/auth";
+import { auth, db, signOutUser } from "@/lib/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 import {
   collection,
   onSnapshot,
@@ -19,7 +19,6 @@ import { TripItem } from "@/components/RecentTrips";
 import { RouteDetail } from "@/components/RouteMap";
 import {
   Route as RouteIcon,
-  MapPin,
   Plane,
   Train,
   Car,
@@ -159,7 +158,8 @@ export default function RoutesPage() {
   // Default active route selection
   useEffect(() => {
     if (routes.length > 0 && !selectedRouteId) {
-      setSelectedRouteId(routes[0].id);
+      const selectFirstRoute = window.setTimeout(() => setSelectedRouteId(routes[0].id), 0);
+      return () => window.clearTimeout(selectFirstRoute);
     }
   }, [routes, selectedRouteId]);
 
@@ -188,7 +188,7 @@ export default function RoutesPage() {
 
   const handleSignOut = async () => {
     try {
-      await signOut(auth);
+      await signOutUser();
       window.location.href = "/signin";
     } catch (error) {
       console.error("Error signing out:", error);

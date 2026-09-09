@@ -28,6 +28,28 @@ const emptyChartData = [
   { name: "Sun", value: 0 },
 ];
 
+interface ChartLabelProps {
+  x?: number;
+  y?: number;
+  index?: number;
+}
+
+function PeakBadge({ x = 0, y = 0, index, peakIndex, peakValue }: ChartLabelProps & { peakIndex: number; peakValue: number }) {
+  if (index !== peakIndex || peakValue <= 0) return null;
+
+  return (
+    <g>
+      <circle cx={x} cy={y} r={7} fill="#2563eb" opacity={0.25} />
+      <circle cx={x} cy={y} r={4.5} fill="#2563eb" stroke="white" strokeWidth={2.5} />
+      <rect x={x - 22} y={y - 32} width={44} height={22} rx={6} fill="#0e1326" className="shadow-sm" />
+      <polygon points={`${x - 4},${y - 10} ${x + 4},${y - 10} ${x},${y - 6}`} fill="#0e1326" />
+      <text x={x} y={y - 17} fill="white" fontSize={10} fontWeight="bold" textAnchor="middle">
+        ${peakValue}
+      </text>
+    </g>
+  );
+}
+
 export default function SpendingChart({
   expenses = [],
   dailyAverage = 0,
@@ -82,47 +104,6 @@ export default function SpendingChart({
       });
     }
   }
-
-  const CustomBadge = (props: any) => {
-    const { x, y, index } = props;
-    if (index !== peakIndex || peakValue <= 0) return null;
-
-    return (
-      <g>
-        {/* Outer Glow */}
-        <circle cx={x} cy={y} r={7} fill="#2563eb" opacity={0.25} />
-        {/* Main Dot */}
-        <circle cx={x} cy={y} r={4.5} fill="#2563eb" stroke="white" strokeWidth={2.5} />
-
-        {/* Badge background */}
-        <rect
-          x={x - 22}
-          y={y - 32}
-          width={44}
-          height={22}
-          rx={6}
-          fill="#0e1326"
-          className="shadow-sm"
-        />
-        {/* Pointer triangle */}
-        <polygon
-          points={`${x - 4},${y - 10} ${x + 4},${y - 10} ${x},${y - 6}`}
-          fill="#0e1326"
-        />
-        {/* Text */}
-        <text
-          x={x}
-          y={y - 17}
-          fill="white"
-          fontSize={10}
-          fontWeight="bold"
-          textAnchor="middle"
-        >
-          ${peakValue}
-        </text>
-      </g>
-    );
-  };
 
   const maxValueInChart = Math.max(...chartData.map((d) => d.value), 100);
   const yDomainMax = Math.ceil(maxValueInChart / 50) * 50;
@@ -201,7 +182,7 @@ export default function SpendingChart({
               stroke="#2563eb"
               strokeWidth={2.5}
               fill="url(#chartGradient)"
-              label={<CustomBadge />}
+              label={<PeakBadge peakIndex={peakIndex} peakValue={peakValue} />}
               dot={{ r: 3, fill: "white", stroke: "#2563eb", strokeWidth: 2 }}
               activeDot={{ r: 5, fill: "#2563eb", stroke: "white", strokeWidth: 2 }}
             />

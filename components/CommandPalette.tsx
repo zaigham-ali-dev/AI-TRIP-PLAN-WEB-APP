@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { auth, db } from "@/lib/firebase";
 import { onAuthStateChanged, User } from "firebase/auth";
 import { collection, onSnapshot } from "firebase/firestore";
+import type { LucideIcon } from "lucide-react";
 import {
   Search,
   LayoutGrid,
@@ -18,10 +19,6 @@ import {
   Sparkles,
   BarChart3,
   Settings,
-  DollarSign,
-  MapPin,
-  Calendar,
-  Tag,
   ArrowRight,
   CornerDownLeft,
   X,
@@ -33,7 +30,7 @@ export interface CommandItem {
   subtitle?: string;
   category: "Pages" | "Trips" | "Expenses" | "Accommodation";
   href: string;
-  icon: any;
+  icon: LucideIcon;
   iconBg: string;
   iconColor: string;
   badge?: string;
@@ -185,10 +182,12 @@ export default function CommandPalette({
   // Listen to Firestore Collections for live search index
   useEffect(() => {
     if (!currentUser) {
-      setTripsData([]);
-      setExpensesData([]);
-      setAccommodationsData([]);
-      return;
+      const clearSearchData = window.setTimeout(() => {
+        setTripsData([]);
+        setExpensesData([]);
+        setAccommodationsData([]);
+      }, 0);
+      return () => window.clearTimeout(clearSearchData);
     }
 
     const unsubTrips = onSnapshot(
@@ -294,13 +293,15 @@ export default function CommandPalette({
 
   // Focus input when opened
   useEffect(() => {
-    if (isOpen) {
+    if (!isOpen) return;
+
+    const focusTimer = window.setTimeout(() => {
       setSearchQuery("");
       setSelectedIndex(0);
-      setTimeout(() => {
-        inputRef.current?.focus();
-      }, 50);
-    }
+      inputRef.current?.focus();
+    }, 50);
+
+    return () => window.clearTimeout(focusTimer);
   }, [isOpen]);
 
   // Filter and Combine Results
@@ -332,7 +333,8 @@ export default function CommandPalette({
 
   // Reset selected index if results change
   useEffect(() => {
-    setSelectedIndex(0);
+    const resetSelection = window.setTimeout(() => setSelectedIndex(0), 0);
+    return () => window.clearTimeout(resetSelection);
   }, [filteredResults.length]);
 
   // Handle Key Navigation inside dialog

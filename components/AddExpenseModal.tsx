@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { X, Receipt, DollarSign, Calendar, Tag } from "lucide-react";
+import { getErrorMessage } from "@/lib/errorUtils";
 
 interface AddExpenseModalProps {
   isOpen: boolean;
@@ -72,8 +73,8 @@ export default function AddExpenseModal({
       setCategory("Food & Dining");
       setDate(new Date().toISOString().split("T")[0]);
       onClose();
-    } catch (err: any) {
-      setError(err?.message || "Failed to add expense. Please try again.");
+    } catch (err: unknown) {
+      setError(getErrorMessage(err, "Failed to add expense. Please try again."));
     } finally {
       setLoading(false);
     }

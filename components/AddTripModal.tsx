@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { X, Plane, Calendar, DollarSign, MapPin } from "lucide-react";
+import { getErrorMessage } from "@/lib/errorUtils";
 
 interface AddTripModalProps {
   isOpen: boolean;
@@ -95,8 +96,8 @@ export default function AddTripModal({
       setStartDate("");
       setEndDate("");
       onClose();
-    } catch (err: any) {
-      setError(err?.message || "Failed to add trip. Please try again.");
+    } catch (err: unknown) {
+      setError(getErrorMessage(err, "Failed to add trip. Please try again."));
     } finally {
       setLoading(false);
     }

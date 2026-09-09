@@ -23,6 +23,44 @@ body {
   overflow-x: hidden;
 }
 
+.day-plan-modal-root {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.day-plan-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  cursor: pointer;
+  background: rgba(8, 13, 28, 0.78);
+  backdrop-filter: blur(36px) saturate(1.15);
+  -webkit-backdrop-filter: blur(36px) saturate(1.15);
+}
+
+.day-plan-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(90vw, 1020px);
+  height: min(84dvh, 740px);
+}
+
+@media (max-width: 640px) {
+  .day-plan-modal-root {
+    padding: 12px;
+  }
+
+  .day-plan-modal-panel {
+    width: min(100%, 520px);
+    height: min(82dvh, 680px);
+  }
+}
+
 @keyframes floatSlow {
 
   0%,

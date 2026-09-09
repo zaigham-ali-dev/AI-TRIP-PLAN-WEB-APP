@@ -2,6 +2,7 @@
 
 import React from "react";
 import { DollarSign, Car, Calendar, Activity, ArrowRight } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export interface DashboardStats {
   totalBudget: number;
@@ -16,13 +17,13 @@ interface SingleStatCardProps {
   label?: string;
   value?: string | number;
   subtitle?: string;
-  icon?: any;
+  icon?: LucideIcon;
   iconBg?: string;
   iconColor?: string;
   stats?: DashboardStats;
 }
 
-export function SingleStatCard({
+function SingleStatCard({
   label,
   value,
   subtitle,

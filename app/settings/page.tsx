@@ -2,10 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { auth, db } from "@/lib/firebase";
+import { auth, db, signOutUser } from "@/lib/firebase";
 import {
   onAuthStateChanged,
-  signOut,
   updateProfile,
   sendPasswordResetEmail,
   User,
@@ -19,6 +18,7 @@ import {
 
 import Sidebar from "@/components/Sidebar";
 import DashboardHeader from "@/components/DashboardHeader";
+import { getErrorMessage } from "@/lib/errorUtils";
 import {
   Settings as SettingsIcon,
   User as UserIcon,
@@ -103,7 +103,7 @@ export default function SettingsPage() {
 
   const handleSignOut = async () => {
     try {
-      await signOut(auth);
+      await signOutUser();
       window.location.href = "/signin";
     } catch (error) {
       console.error("Error signing out:", error);
@@ -141,9 +141,9 @@ export default function SettingsPage() {
 
       setProfileSuccessMsg("Profile updated successfully!");
       setTimeout(() => setProfileSuccessMsg(null), 4000);
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error("Error updating profile:", err);
-      setProfileErrorMsg(err?.message || "Failed to update profile. Please try again.");
+      setProfileErrorMsg(getErrorMessage(err, "Failed to update profile. Please try again."));
     } finally {
       setUpdatingProfile(false);
     }
@@ -189,9 +189,9 @@ export default function SettingsPage() {
       await sendPasswordResetEmail(auth, user.email);
       setResetSuccessMsg(`Password reset link sent to ${user.email}`);
       setTimeout(() => setResetSuccessMsg(null), 5000);
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error("Error sending reset email:", err);
-      setResetErrorMsg(err?.message || "Failed to send reset email. Please try again.");
+      setResetErrorMsg(getErrorMessage(err, "Failed to send reset email. Please try again."));
     } finally {
       setSendingReset(false);
     }
@@ -562,7 +562,7 @@ export default function SettingsPage() {
                       Reset Password
                     </span>
                     <p className="text-[11.5px] text-[#64748b] font-medium mt-0.5 leading-relaxed">
-                      We'll send a secure password reset link to your registered email address ({user.email}).
+                      We&apos;ll send a secure password reset link to your registered email address ({user.email}).
                     </p>
                   </div>
                 </div>

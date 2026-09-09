@@ -19,6 +19,7 @@ import {
   Crown,
   X
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 interface SidebarProps {
   activeTab?: string;
@@ -28,7 +29,7 @@ interface SidebarProps {
 
 interface MenuItem {
   name: string;
-  icon: any;
+  icon: LucideIcon;
   href: string;
 }
 

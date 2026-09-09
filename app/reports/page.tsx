@@ -2,14 +2,14 @@
 
 import React, { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import { auth, db } from "@/lib/firebase";
-import { onAuthStateChanged, signOut, User } from "firebase/auth";
+import { auth, db, signOutUser } from "@/lib/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 import { collection, onSnapshot } from "firebase/firestore";
 
 import Sidebar from "@/components/Sidebar";
 import DashboardHeader from "@/components/DashboardHeader";
-import { TripItem } from "@/components/RecentTrips";
 import { ExpenseItem } from "@/components/TopExpenses";
+import type { LucideIcon } from "lucide-react";
 import {
   BarChart3,
   DollarSign,
@@ -26,8 +26,6 @@ import {
   CreditCard,
 } from "lucide-react";
 import {
-  BarChart,
-  Bar,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -44,7 +42,7 @@ import {
 // Category config
 const CATEGORY_CONFIG: Record<
   string,
-  { icon: any; color: string; bg: string; text: string }
+  { icon: LucideIcon; color: string; bg: string; text: string }
 > = {
   Accommodation: { icon: Home, color: "#3b82f6", bg: "bg-blue-50", text: "text-blue-600" },
   "Food & Dining": { icon: Utensils, color: "#10b981", bg: "bg-emerald-50", text: "text-emerald-600" },
@@ -72,7 +70,6 @@ export default function ReportsPage() {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [trips, setTrips] = useState<TripItem[]>([]);
   const [expenses, setExpenses] = useState<ExpenseItem[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("All");
@@ -98,16 +95,7 @@ export default function ReportsPage() {
   useEffect(() => {
     if (!user) return;
 
-    const tripsColRef = collection(db, "users", user.uid, "trips");
     const expensesColRef = collection(db, "users", user.uid, "expenses");
-
-    const unsubTrips = onSnapshot(tripsColRef, (snapshot) => {
-      const loaded: TripItem[] = [];
-      snapshot.forEach((docSnap) => {
-        loaded.push({ id: docSnap.id, ...(docSnap.data() as Omit<TripItem, "id">) });
-      });
-      setTrips(loaded);
-    });
 
     const unsubExpenses = onSnapshot(expensesColRef, (snapshot) => {
       const loaded: ExpenseItem[] = [];
@@ -118,14 +106,13 @@ export default function ReportsPage() {
     });
 
     return () => {
-      unsubTrips();
       unsubExpenses();
     };
   }, [user]);
 
   const handleSignOut = async () => {
     try {
-      await signOut(auth);
+      await signOutUser();
       window.location.href = "/signin";
     } catch (error) {
       console.error("Error signing out:", error);

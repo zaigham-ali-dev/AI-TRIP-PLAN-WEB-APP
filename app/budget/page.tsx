@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import { auth, db } from "@/lib/firebase";
-import { onAuthStateChanged, signOut, User } from "firebase/auth";
+import { auth, db, signOutUser } from "@/lib/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 import {
   collection,
   onSnapshot,
@@ -42,9 +42,10 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import type { LucideIcon } from "lucide-react";
 
 // Standard budget allocation percentage weights across categories
-const CATEGORY_WEIGHTS: Record<string, { weight: number; icon: any; color: string; bg: string; text: string }> = {
+const CATEGORY_WEIGHTS: Record<string, { weight: number; icon: LucideIcon; color: string; bg: string; text: string }> = {
   Accommodation: { weight: 0.35, icon: Home, color: "#3b82f6", bg: "bg-blue-50", text: "text-blue-600" },
   "Food & Dining": { weight: 0.25, icon: Utensils, color: "#10b981", bg: "bg-emerald-50", text: "text-emerald-600" },
   Transport: { weight: 0.15, icon: Car, color: "#f97316", bg: "bg-orange-50", text: "text-orange-600" },
@@ -169,7 +170,7 @@ export default function BudgetPage() {
 
   const handleSignOut = async () => {
     try {
-      await signOut(auth);
+      await signOutUser();
       window.location.href = "/signin";
     } catch (error) {
       console.error("Error signing out:", error);

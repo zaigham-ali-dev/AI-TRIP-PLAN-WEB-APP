@@ -4,15 +4,18 @@ import {
   addDoc,
   doc,
   updateDoc,
-  deleteDoc,
   getDocs,
   getDoc,
   writeBatch,
   serverTimestamp,
-  query,
-  orderBy,
-  limit,
 } from "firebase/firestore";
+
+export type NotificationTimestamp =
+  | Date
+  | string
+  | number
+  | { toDate?: () => Date; toMillis?: () => number }
+  | null;
 
 export type NotificationType =
   | "budget_alert"
@@ -26,7 +29,7 @@ export interface AppNotification {
   message: string;
   type: NotificationType;
   read: boolean;
-  createdAt?: any;
+  createdAt?: NotificationTimestamp;
 }
 
 /**
@@ -153,4 +156,3 @@ export async function checkAndTriggerBudgetAlert(
     });
   }
 }
-
