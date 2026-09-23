@@ -41,12 +41,6 @@ export default function Navbar() {
             >
               How It Works
             </button>
-            <button
-              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="hover:text-blue-600 transition-colors py-1 cursor-pointer"
-            >
-              Pricing
-            </button>
           </nav>
 
           {/* Desktop Right CTAs */}
@@ -101,12 +95,6 @@ export default function Navbar() {
               className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-blue-600 text-left cursor-pointer"
             >
               How It Works
-            </button>
-            <button
-              onClick={() => { setMobileMenuOpen(false); document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" }); }}
-              className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-blue-600 text-left cursor-pointer"
-            >
-              Pricing
             </button>
 
             <div className="pt-2 border-t border-slate-100 flex items-center justify-between px-3">

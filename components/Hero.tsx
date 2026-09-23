@@ -189,11 +189,11 @@ export default function Hero() {
       {/* Right-Side Panoramic Landscape Image */}
       <div className="absolute top-0 right-0 bottom-0 w-full lg:w-[72%] xl:w-[68%] z-0 select-none pointer-events-none overflow-hidden hidden lg:block">
         <Image
-          src="/images/hero-view.jpg"
+          src="/images/hero-wanderlust.jpg"
           alt="Scenic mountain lake travel view"
           fill
           priority
-          className="object-cover object-[16%_center] lg:object-[14%_center]"
+          className="object-cover object-[28%_center] lg:object-[24%_center]"
         />
         <div className="absolute inset-y-0 left-0 w-44 sm:w-64 lg:w-96 bg-gradient-to-r from-[#f8fafd] via-[#f8fafd]/85 to-transparent z-10" />
         <div className="absolute top-0 inset-x-0 h-28 bg-gradient-to-b from-[#f8fafd]/50 via-[#f8fafd]/20 to-transparent z-10" />
