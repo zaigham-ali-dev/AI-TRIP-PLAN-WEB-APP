@@ -12,7 +12,7 @@ import type {
   StatsView,
 } from "@/lib/types";
 
-const INITIAL_LIKES = [42, 31, 27, 19, 14, 11];
+const INITIAL_LIKES = [42, 31, 27, 14, 11];
 
 export const staticProjects: ProjectView[] = PROJECT_SEED.map((project, index) => ({
   id: index + 1,

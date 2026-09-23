@@ -514,24 +514,8 @@ const PROJECT_SEED = [
         featured: false
     },
     {
-        slug: "afrika-bitat",
-        number: "04",
-        title: "AFRIKA BITAT",
-        subtitle: "Modern Web Platform",
-        description: "A production platform for a modern architecture practice — content architecture, project index, and a performance budget kept under a Lighthouse-proud payload.",
-        stack: [
-            "Next.js",
-            "Tailwind CSS",
-            "Headless Content"
-        ],
-        liveUrl: "https://afrikabitat.com",
-        year: "2025",
-        image: "/work/afrika.jpg",
-        featured: false
-    },
-    {
         slug: "cause-house",
-        number: "05",
+        number: "04",
         title: "CAUSE HOUSE",
         subtitle: "Non-Profit / Web Experience",
         description: "An impact storytelling experience for a non-profit: donation flows, transparency dashboards and warm documentary imagery treated with restraint.",
@@ -547,7 +531,7 @@ const PROJECT_SEED = [
     },
     {
         slug: "bakery-website",
-        number: "06",
+        number: "05",
         title: "BAKERY WEBSITE",
         subtitle: "Custom Creative Web Design",
         description: "A hand-crafted, warm-toned artisan bakery site built with pure HTML5 and CSS3 — grid, motion and detail work with zero frameworks.",
@@ -566,36 +550,41 @@ const SERVICE_SEED = [
     {
         number: "01",
         title: "FRONTEND DEVELOPMENT",
-        description: "Building ultra-fast, responsive web interfaces using Next.js, React, Tailwind CSS, and HTML5/CSS3.",
+        description: "Building ultra-fast, responsive web interfaces using React, Next.js, Tailwind CSS, and modern JavaScript/TypeScript.",
         icon: "layout",
         tags: [
-            "Next.js",
             "React",
+            "Next.js",
             "Tailwind CSS",
-            "HTML5/CSS3"
+            "HTML/CSS3",
+            "JavaScript",
+            "TypeScript"
         ]
     },
     {
         number: "02",
         title: "FULL STACK DEVELOPMENT",
-        description: "Architecting scalable web solutions using PHP, Laravel, Node.js, and Firebase integration.",
+        description: "Architecting scalable web solutions using PHP, Laravel, Node.js, Firebase, and MySQL.",
         icon: "layers",
         tags: [
             "PHP",
             "Laravel",
             "Node.js",
-            "Firebase"
+            "Firebase",
+            "MySQL / Database"
         ]
     },
     {
         number: "03",
         title: "CREATIVE DEVELOPMENT & MOTION",
-        description: "Crafting interactive experiences with animations using GSAP, Framer Motion, and AI development tools.",
+        description: "Crafting interactive experiences with animations using GSAP, Framer Motion, Three.js, and CSS animations.",
         icon: "sparkles",
         tags: [
             "GSAP",
             "Framer Motion",
-            "Micro-interactions"
+            "Three.js",
+            "Micro-interactions",
+            "CSS Animations"
         ]
     },
     {
@@ -606,7 +595,9 @@ const SERVICE_SEED = [
         tags: [
             "Cursor AI",
             "Antigravity AI",
-            "Kiro AI"
+            "Kiro AI",
+            "Python",
+            "OpenAI API / LLMs"
         ]
     }
 ];
@@ -800,7 +791,6 @@ const INITIAL_LIKES = [
     42,
     31,
     27,
-    19,
     14,
     11
 ];

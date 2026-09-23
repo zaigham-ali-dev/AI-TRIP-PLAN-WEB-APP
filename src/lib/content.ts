@@ -56,21 +56,8 @@ export const PROJECT_SEED: ProjectSeed[] = [
     featured: false,
   },
   {
-    slug: "afrika-bitat",
-    number: "04",
-    title: "AFRIKA BITAT",
-    subtitle: "Modern Web Platform",
-    description:
-      "A production platform for a modern architecture practice — content architecture, project index, and a performance budget kept under a Lighthouse-proud payload.",
-    stack: ["Next.js", "Tailwind CSS", "Headless Content"],
-    liveUrl: "https://afrikabitat.com",
-    year: "2025",
-    image: "/work/afrika.jpg",
-    featured: false,
-  },
-  {
     slug: "cause-house",
-    number: "05",
+    number: "04",
     title: "CAUSE HOUSE",
     subtitle: "Non-Profit / Web Experience",
     description:
@@ -83,7 +70,7 @@ export const PROJECT_SEED: ProjectSeed[] = [
   },
   {
     slug: "bakery-website",
-    number: "06",
+    number: "05",
     title: "BAKERY WEBSITE",
     subtitle: "Custom Creative Web Design",
     description:
@@ -109,25 +96,25 @@ export const SERVICE_SEED: ServiceSeed[] = [
     number: "01",
     title: "FRONTEND DEVELOPMENT",
     description:
-      "Building ultra-fast, responsive web interfaces using Next.js, React, Tailwind CSS, and HTML5/CSS3.",
+      "Building ultra-fast, responsive web interfaces using React, Next.js, Tailwind CSS, and modern JavaScript/TypeScript.",
     icon: "layout",
-    tags: ["Next.js", "React", "Tailwind CSS", "HTML5/CSS3"],
+    tags: ["React", "Next.js", "Tailwind CSS", "HTML/CSS3", "JavaScript", "TypeScript"],
   },
   {
     number: "02",
     title: "FULL STACK DEVELOPMENT",
     description:
-      "Architecting scalable web solutions using PHP, Laravel, Node.js, and Firebase integration.",
+      "Architecting scalable web solutions using PHP, Laravel, Node.js, Firebase, and MySQL.",
     icon: "layers",
-    tags: ["PHP", "Laravel", "Node.js", "Firebase"],
+    tags: ["PHP", "Laravel", "Node.js", "Firebase", "MySQL / Database"],
   },
   {
     number: "03",
     title: "CREATIVE DEVELOPMENT & MOTION",
     description:
-      "Crafting interactive experiences with animations using GSAP, Framer Motion, and AI development tools.",
+      "Crafting interactive experiences with animations using GSAP, Framer Motion, Three.js, and CSS animations.",
     icon: "sparkles",
-    tags: ["GSAP", "Framer Motion", "Micro-interactions"],
+    tags: ["GSAP", "Framer Motion", "Three.js", "Micro-interactions", "CSS Animations"],
   },
   {
     number: "04",
@@ -135,7 +122,7 @@ export const SERVICE_SEED: ServiceSeed[] = [
     description:
       "Leveraging cutting-edge AI tools (Cursor AI, Antigravity AI, Kiro AI) to accelerate and refine modern web workflows.",
     icon: "brain",
-    tags: ["Cursor AI", "Antigravity AI", "Kiro AI"],
+    tags: ["Cursor AI", "Antigravity AI", "Kiro AI", "Python", "OpenAI API / LLMs"],
   },
 ];
 

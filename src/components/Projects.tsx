@@ -160,7 +160,7 @@ export default function Projects({
             index="02"
             label="Portfolio"
             title="Selected Work"
-            description="Six builds across property, travel, AI, architecture and non-profit platforms — each one pushed until the interface felt effortless."
+            description="Selected builds across property, travel, AI, non-profit and creative platforms — each one pushed until the interface felt effortless."
           />
 
           <div className="flex flex-col items-start gap-4 lg:items-end">

@@ -612,24 +612,8 @@ const PROJECT_SEED = [
         featured: false
     },
     {
-        slug: "afrika-bitat",
-        number: "04",
-        title: "AFRIKA BITAT",
-        subtitle: "Modern Web Platform",
-        description: "A production platform for a modern architecture practice — content architecture, project index, and a performance budget kept under a Lighthouse-proud payload.",
-        stack: [
-            "Next.js",
-            "Tailwind CSS",
-            "Headless Content"
-        ],
-        liveUrl: "https://afrikabitat.com",
-        year: "2025",
-        image: "/work/afrika.jpg",
-        featured: false
-    },
-    {
         slug: "cause-house",
-        number: "05",
+        number: "04",
         title: "CAUSE HOUSE",
         subtitle: "Non-Profit / Web Experience",
         description: "An impact storytelling experience for a non-profit: donation flows, transparency dashboards and warm documentary imagery treated with restraint.",
@@ -645,7 +629,7 @@ const PROJECT_SEED = [
     },
     {
         slug: "bakery-website",
-        number: "06",
+        number: "05",
         title: "BAKERY WEBSITE",
         subtitle: "Custom Creative Web Design",
         description: "A hand-crafted, warm-toned artisan bakery site built with pure HTML5 and CSS3 — grid, motion and detail work with zero frameworks.",
@@ -664,36 +648,41 @@ const SERVICE_SEED = [
     {
         number: "01",
         title: "FRONTEND DEVELOPMENT",
-        description: "Building ultra-fast, responsive web interfaces using Next.js, React, Tailwind CSS, and HTML5/CSS3.",
+        description: "Building ultra-fast, responsive web interfaces using React, Next.js, Tailwind CSS, and modern JavaScript/TypeScript.",
         icon: "layout",
         tags: [
-            "Next.js",
             "React",
+            "Next.js",
             "Tailwind CSS",
-            "HTML5/CSS3"
+            "HTML/CSS3",
+            "JavaScript",
+            "TypeScript"
         ]
     },
     {
         number: "02",
         title: "FULL STACK DEVELOPMENT",
-        description: "Architecting scalable web solutions using PHP, Laravel, Node.js, and Firebase integration.",
+        description: "Architecting scalable web solutions using PHP, Laravel, Node.js, Firebase, and MySQL.",
         icon: "layers",
         tags: [
             "PHP",
             "Laravel",
             "Node.js",
-            "Firebase"
+            "Firebase",
+            "MySQL / Database"
         ]
     },
     {
         number: "03",
         title: "CREATIVE DEVELOPMENT & MOTION",
-        description: "Crafting interactive experiences with animations using GSAP, Framer Motion, and AI development tools.",
+        description: "Crafting interactive experiences with animations using GSAP, Framer Motion, Three.js, and CSS animations.",
         icon: "sparkles",
         tags: [
             "GSAP",
             "Framer Motion",
-            "Micro-interactions"
+            "Three.js",
+            "Micro-interactions",
+            "CSS Animations"
         ]
     },
     {
@@ -704,7 +693,9 @@ const SERVICE_SEED = [
         tags: [
             "Cursor AI",
             "Antigravity AI",
-            "Kiro AI"
+            "Kiro AI",
+            "Python",
+            "OpenAI API / LLMs"
         ]
     }
 ];
@@ -4905,7 +4896,7 @@ function Projects({ projects, stats }) {
                                 index: "02",
                                 label: "Portfolio",
                                 title: "Selected Work",
-                                description: "Six builds across property, travel, AI, architecture and non-profit platforms — each one pushed until the interface felt effortless."
+                                description: "Selected builds across property, travel, AI, non-profit and creative platforms — each one pushed until the interface felt effortless."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Projects.tsx",
                                 lineNumber: 159,
@@ -5100,6 +5091,8 @@ function Projects({ projects, stats }) {
 __turbopack_context__.s([
     "AntigravityAiLogo",
     ()=>AntigravityAiLogo,
+    "CssAnimationsLogo",
+    ()=>CssAnimationsLogo,
     "CursorAiLogo",
     ()=>CursorAiLogo,
     "FirebaseLogo",
@@ -5112,12 +5105,22 @@ __turbopack_context__.s([
     ()=>HtmlCssLogo,
     "JavaLogo",
     ()=>JavaLogo,
+    "JavaScriptLogo",
+    ()=>JavaScriptLogo,
+    "KiroAiLogo",
+    ()=>KiroAiLogo,
     "LaravelLogo",
     ()=>LaravelLogo,
+    "MicroInteractionsLogo",
+    ()=>MicroInteractionsLogo,
+    "MySqlLogo",
+    ()=>MySqlLogo,
     "NextjsLogo",
     ()=>NextjsLogo,
     "NodejsLogo",
     ()=>NodejsLogo,
+    "OpenAiLogo",
+    ()=>OpenAiLogo,
     "PhpLogo",
     ()=>PhpLogo,
     "PythonLogo",
@@ -5964,6 +5967,439 @@ function PythonLogo({ className = "w-6 h-6", size }) {
         columnNumber: 5
     }, this);
 }
+function JavaScriptLogo({ className = "w-6 h-6", size }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        viewBox: "0 0 32 32",
+        className: className,
+        style: size ? {
+            width: size,
+            height: size
+        } : undefined,
+        fill: "none",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                width: "32",
+                height: "32",
+                rx: "4",
+                fill: "#F7DF1E"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 386,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M21.2 24.4c.8 1.2 1.8 2.1 3.6 2.1 1.5 0 2.5-.8 2.5-1.8 0-1.3-.7-1.7-2.5-2.5l-.9-.4c-2.5-1.1-4.1-2.4-4.1-5.2 0-2.6 2-4.6 5.1-4.6 2.2 0 3.8.8 4.9 2.8L27 16.7c-.6-1.1-1.3-1.5-2.3-1.5-1 0-1.7.7-1.7 1.5 0 1 .7 1.5 2.2 2.1l.9.4c2.9 1.3 4.6 2.5 4.6 5.4 0 3.1-2.4 4.8-5.6 4.8-3.1 0-5.2-1.5-6.2-3.5l2.3-1.5zM9.1 24.7c.6 1 1.1 1.8 2.4 1.8 1.2 0 2-.5 2-2.4v-12h2.8v12.1c0 3.9-2.3 5.7-5.6 5.7-3 0-4.7-1.6-5.6-3.4l2-1.8z",
+                fill: "#323330"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 387,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/TechLogos.tsx",
+        lineNumber: 380,
+        columnNumber: 5
+    }, this);
+}
+function KiroAiLogo({ className = "w-6 h-6", size }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        viewBox: "0 0 32 32",
+        className: className,
+        style: size ? {
+            width: size,
+            height: size
+        } : undefined,
+        fill: "none",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                width: "32",
+                height: "32",
+                rx: "8",
+                fill: "#0d1117",
+                stroke: "rgba(255,150,50,0.4)",
+                strokeWidth: "1.5"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 403,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M10 8v16M10 16l6-6M10 16l6 6",
+                stroke: "url(#kiro_grad)",
+                strokeWidth: "2.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 404,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "22",
+                cy: "12",
+                r: "2",
+                fill: "#ff9632"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 411,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "22",
+                cy: "20",
+                r: "1.5",
+                fill: "#ff9632",
+                opacity: "0.6"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 412,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
+                    id: "kiro_grad",
+                    x1: "10",
+                    y1: "8",
+                    x2: "16",
+                    y2: "22",
+                    gradientUnits: "userSpaceOnUse",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                            stopColor: "#ff9632"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/TechLogos.tsx",
+                            lineNumber: 415,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                            offset: "1",
+                            stopColor: "#ff5e00"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/TechLogos.tsx",
+                            lineNumber: 416,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 414,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 413,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/TechLogos.tsx",
+        lineNumber: 397,
+        columnNumber: 5
+    }, this);
+}
+function OpenAiLogo({ className = "w-6 h-6", size }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        viewBox: "0 0 32 32",
+        className: className,
+        style: size ? {
+            width: size,
+            height: size
+        } : undefined,
+        fill: "none",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "16",
+                cy: "16",
+                r: "14",
+                fill: "#0d1117",
+                stroke: "rgba(16,163,127,0.4)",
+                strokeWidth: "1.5"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 431,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M16 6c-3.5 0-6.4 1.9-7.8 4.8-.3.6-.1 1.2.3 1.6l5 4.5c.4.3.9.3 1.3 0l5-4.5c.4-.4.6-1 .3-1.6C18.8 7.9 17.5 6 16 6z",
+                fill: "#10a37f"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 432,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M8.5 13c-.8 1.5-1 3.2-.5 4.8.5 1.8 1.8 3.3 3.5 4.2.5.3 1.1.1 1.4-.3l3-5.5c.2-.4.1-.9-.2-1.2L11 11.5c-.4-.3-1-.4-1.5-.1-.4.3-.7.9-1 1.6z",
+                fill: "#10a37f",
+                opacity: "0.8"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 436,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M23.5 13c.8 1.5 1 3.2.5 4.8-.5 1.8-1.8 3.3-3.5 4.2-.5.3-1.1.1-1.4-.3l-3-5.5c-.2-.4-.1-.9.2-1.2L21 11.5c.4-.3 1-.4 1.5-.1.4.3.7.9 1 1.6z",
+                fill: "#10a37f",
+                opacity: "0.6"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 441,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/TechLogos.tsx",
+        lineNumber: 425,
+        columnNumber: 5
+    }, this);
+}
+function MySqlLogo({ className = "w-6 h-6", size }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        viewBox: "0 0 32 32",
+        className: className,
+        style: size ? {
+            width: size,
+            height: size
+        } : undefined,
+        fill: "none",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                cx: "16",
+                cy: "10",
+                rx: "11",
+                ry: "5",
+                fill: "#00758F",
+                opacity: "0.9"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 458,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M5 10v12c0 2.8 4.9 5 11 5s11-2.2 11-5V10",
+                stroke: "#00758F",
+                strokeWidth: "2",
+                fill: "none"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 459,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M5 16c0 2.8 4.9 5 11 5s11-2.2 11-5",
+                stroke: "#00758F",
+                strokeWidth: "1.5",
+                fill: "none",
+                opacity: "0.6"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 460,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M10 18v4.5M13 17.5v5M16 17v5.5M19 17.5v5M22 18v4.5",
+                stroke: "#F29111",
+                strokeWidth: "1.2",
+                strokeLinecap: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 461,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/TechLogos.tsx",
+        lineNumber: 452,
+        columnNumber: 5
+    }, this);
+}
+function MicroInteractionsLogo({ className = "w-6 h-6", size }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        viewBox: "0 0 32 32",
+        className: className,
+        style: size ? {
+            width: size,
+            height: size
+        } : undefined,
+        fill: "none",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                width: "32",
+                height: "32",
+                rx: "8",
+                fill: "#0d1117",
+                stroke: "rgba(168,85,247,0.3)",
+                strokeWidth: "1.5"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 479,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "16",
+                cy: "16",
+                r: "4",
+                fill: "url(#micro_grad)"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 480,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "16",
+                cy: "16",
+                r: "7",
+                stroke: "#a855f7",
+                strokeWidth: "1",
+                opacity: "0.5",
+                strokeDasharray: "3 3"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 481,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "16",
+                cy: "16",
+                r: "10",
+                stroke: "#a855f7",
+                strokeWidth: "0.8",
+                opacity: "0.3",
+                strokeDasharray: "2 4"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 482,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "24",
+                cy: "10",
+                r: "1.5",
+                fill: "#c084fc",
+                opacity: "0.7"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 483,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "8",
+                cy: "22",
+                r: "1",
+                fill: "#c084fc",
+                opacity: "0.5"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 484,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("radialGradient", {
+                    id: "micro_grad",
+                    cx: "16",
+                    cy: "16",
+                    r: "4",
+                    gradientUnits: "userSpaceOnUse",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                            stopColor: "#c084fc"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/TechLogos.tsx",
+                            lineNumber: 487,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                            offset: "1",
+                            stopColor: "#7c3aed"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/TechLogos.tsx",
+                            lineNumber: 488,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 486,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 485,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/TechLogos.tsx",
+        lineNumber: 473,
+        columnNumber: 5
+    }, this);
+}
+function CssAnimationsLogo({ className = "w-6 h-6", size }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        viewBox: "0 0 32 32",
+        className: className,
+        style: size ? {
+            width: size,
+            height: size
+        } : undefined,
+        fill: "none",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                width: "32",
+                height: "32",
+                rx: "8",
+                fill: "#264de4"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 503,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M8 8l1.5 16 6.5 2.5 6.5-2.5 1.5-16H8z",
+                fill: "#2965f1"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 504,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M16 10v14l4.5-1.8 1-10.2H14l.2 2h5.3l-.3 3.5-3.2 1.2-3.2-1.2-.2-2.5h2l.1 1.2 1.3.5 1.3-.5.2-2H12l-.3-4.2H16z",
+                fill: "white"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 508,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M24 6l-2 2 2 2",
+                stroke: "#ffd700",
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 512,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M27 6l-2 2 2 2",
+                stroke: "#ffd700",
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                opacity: "0.5"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 513,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/TechLogos.tsx",
+        lineNumber: 497,
+        columnNumber: 5
+    }, this);
+}
 function TechCollage({ serviceNumber }) {
     const items = SERVICE_TECH_MAP[serviceNumber] ?? [];
     if (!items.length) return null;
@@ -5987,7 +6423,7 @@ function TechCollage({ serviceNumber }) {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/TechLogos.tsx",
-                            lineNumber: 407,
+                            lineNumber: 547,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5996,12 +6432,12 @@ function TechCollage({ serviceNumber }) {
                                 className: "h-10 w-10 sm:h-12 sm:w-12 drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TechLogos.tsx",
-                                lineNumber: 414,
+                                lineNumber: 554,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/TechLogos.tsx",
-                            lineNumber: 413,
+                            lineNumber: 553,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6011,29 +6447,29 @@ function TechCollage({ serviceNumber }) {
                                 children: tech.name
                             }, void 0, false, {
                                 fileName: "[project]/src/components/TechLogos.tsx",
-                                lineNumber: 420,
+                                lineNumber: 560,
                                 columnNumber: 19
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/TechLogos.tsx",
-                            lineNumber: 418,
+                            lineNumber: 558,
                             columnNumber: 15
                         }, this)
                     ]
                 }, tech.name, true, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 401,
+                    lineNumber: 541,
                     columnNumber: 13
                 }, this);
             })
         }, void 0, false, {
             fileName: "[project]/src/components/TechLogos.tsx",
-            lineNumber: 388,
+            lineNumber: 528,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/TechLogos.tsx",
-        lineNumber: 387,
+        lineNumber: 527,
         columnNumber: 5
     }, this);
 }
@@ -6049,7 +6485,7 @@ const SERVICE_TECH_MAP = {
                 children: "React"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 450,
+                lineNumber: 590,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ReactLogo, {
@@ -6057,66 +6493,12 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 451,
+                    lineNumber: 591,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
         {
-            name: "Java",
-            glowColor: "rgba(234, 45, 46, 0.4)",
-            bgGradient: "radial-gradient(circle at 60% 30%, rgba(234, 45, 46, 0.22), #0c0404 75%)",
-            textColor: "text-[#ea2d2e] font-sans font-bold",
-            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "font-sans text-sm font-bold tracking-tight text-[#ea2d2e]",
-                children: [
-                    "Java",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-[9px] align-top text-[#ea2d2e]/80",
-                        children: "™"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/TechLogos.tsx",
-                        lineNumber: 460,
-                        columnNumber: 15
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 459,
-                columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0)),
-            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(JavaLogo, {
-                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(234,45,46,0.6)]",
-                    ...props
-                }, void 0, false, {
-                    fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 463,
-                    columnNumber: 24
-                }, ("TURBOPACK compile-time value", void 0))
-        },
-        {
-            name: "tailwind css",
-            glowColor: "rgba(56, 189, 248, 0.4)",
-            bgGradient: "radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.22), #020b10 75%)",
-            textColor: "text-white font-sans font-bold lowercase",
-            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "font-sans text-sm font-bold text-white lowercase",
-                children: "tailwind css"
-            }, void 0, false, {
-                fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 470,
-                columnNumber: 20
-            }, ("TURBOPACK compile-time value", void 0)),
-            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TailwindLogo, {
-                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(56,189,248,0.7)]",
-                    ...props
-                }, void 0, false, {
-                    fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 471,
-                    columnNumber: 24
-                }, ("TURBOPACK compile-time value", void 0))
-        },
-        {
-            name: "NEXT.JS",
+            name: "Next.js",
             glowColor: "rgba(255, 255, 255, 0.3)",
             bgGradient: "radial-gradient(circle at 65% 35%, rgba(255, 255, 255, 0.16), #050507 75%)",
             textColor: "text-white font-sans font-bold uppercase tracking-wider",
@@ -6129,13 +6511,13 @@ const SERVICE_TECH_MAP = {
                         children: ".JS"
                     }, void 0, false, {
                         fileName: "[project]/src/components/TechLogos.tsx",
-                        lineNumber: 478,
+                        lineNumber: 598,
                         columnNumber: 106
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 478,
+                lineNumber: 598,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NextjsLogo, {
@@ -6143,7 +6525,95 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 479,
+                    lineNumber: 599,
+                    columnNumber: 24
+                }, ("TURBOPACK compile-time value", void 0))
+        },
+        {
+            name: "Tailwind CSS",
+            glowColor: "rgba(56, 189, 248, 0.4)",
+            bgGradient: "radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.22), #020b10 75%)",
+            textColor: "text-white font-sans font-bold",
+            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "font-sans text-sm font-bold text-white",
+                children: "Tailwind CSS"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 606,
+                columnNumber: 20
+            }, ("TURBOPACK compile-time value", void 0)),
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TailwindLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(56,189,248,0.7)]",
+                    ...props
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 607,
+                    columnNumber: 24
+                }, ("TURBOPACK compile-time value", void 0))
+        },
+        {
+            name: "HTML/CSS3",
+            glowColor: "rgba(241, 101, 41, 0.4)",
+            bgGradient: "radial-gradient(circle at 50% 35%, rgba(241, 101, 41, 0.22), #0e0502 75%)",
+            textColor: "text-white font-sans font-bold",
+            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "font-sans text-sm font-bold text-white",
+                children: "HTML/CSS3"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 614,
+                columnNumber: 20
+            }, ("TURBOPACK compile-time value", void 0)),
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(HtmlCssLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(241,101,41,0.7)]",
+                    ...props
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 615,
+                    columnNumber: 24
+                }, ("TURBOPACK compile-time value", void 0))
+        },
+        {
+            name: "JavaScript",
+            glowColor: "rgba(247, 223, 30, 0.4)",
+            bgGradient: "radial-gradient(circle at 50% 35%, rgba(247, 223, 30, 0.22), #0e0d02 75%)",
+            textColor: "text-[#f7df1e] font-sans font-bold",
+            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "font-sans text-sm font-bold text-[#f7df1e]",
+                children: "JavaScript"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 622,
+                columnNumber: 20
+            }, ("TURBOPACK compile-time value", void 0)),
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(JavaScriptLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(247,223,30,0.7)]",
+                    ...props
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 623,
+                    columnNumber: 24
+                }, ("TURBOPACK compile-time value", void 0))
+        },
+        {
+            name: "TypeScript",
+            glowColor: "rgba(49, 120, 198, 0.4)",
+            bgGradient: "radial-gradient(circle at 50% 35%, rgba(49, 120, 198, 0.22), #020a14 75%)",
+            textColor: "text-[#5da0ed] font-sans font-bold",
+            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "font-sans text-sm font-bold text-[#5da0ed]",
+                children: "TypeScript"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 630,
+                columnNumber: 20
+            }, ("TURBOPACK compile-time value", void 0)),
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TypeScriptLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(49,120,198,0.7)]",
+                    ...props
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 631,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         }
@@ -6159,7 +6629,7 @@ const SERVICE_TECH_MAP = {
                 children: "PHP"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 488,
+                lineNumber: 640,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(PhpLogo, {
@@ -6167,7 +6637,7 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 489,
+                    lineNumber: 641,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
@@ -6181,7 +6651,7 @@ const SERVICE_TECH_MAP = {
                 children: "Laravel"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 496,
+                lineNumber: 648,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(LaravelLogo, {
@@ -6189,7 +6659,7 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 497,
+                    lineNumber: 649,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
@@ -6203,7 +6673,7 @@ const SERVICE_TECH_MAP = {
                 children: "Node.js"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 504,
+                lineNumber: 656,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NodejsLogo, {
@@ -6211,7 +6681,7 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 505,
+                    lineNumber: 657,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
@@ -6225,7 +6695,7 @@ const SERVICE_TECH_MAP = {
                 children: "Firebase"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 512,
+                lineNumber: 664,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FirebaseLogo, {
@@ -6233,7 +6703,29 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 513,
+                    lineNumber: 665,
+                    columnNumber: 24
+                }, ("TURBOPACK compile-time value", void 0))
+        },
+        {
+            name: "MySQL / Database",
+            glowColor: "rgba(0, 117, 143, 0.4)",
+            bgGradient: "radial-gradient(circle at 50% 35%, rgba(0, 117, 143, 0.22), #020a0e 75%)",
+            textColor: "text-[#00a4c7] font-sans font-bold",
+            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "font-sans text-sm font-bold text-[#00a4c7]",
+                children: "MySQL"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 672,
+                columnNumber: 20
+            }, ("TURBOPACK compile-time value", void 0)),
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MySqlLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(0,117,143,0.7)]",
+                    ...props
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 673,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         }
@@ -6249,7 +6741,7 @@ const SERVICE_TECH_MAP = {
                 children: "GSAP"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 522,
+                lineNumber: 682,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(GsapLogo, {
@@ -6257,7 +6749,7 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 523,
+                    lineNumber: 683,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
@@ -6271,7 +6763,7 @@ const SERVICE_TECH_MAP = {
                 children: "Framer"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 530,
+                lineNumber: 690,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FramerMotionLogo, {
@@ -6279,7 +6771,7 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 531,
+                    lineNumber: 691,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
@@ -6293,7 +6785,7 @@ const SERVICE_TECH_MAP = {
                 children: "Three.js"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 538,
+                lineNumber: 698,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ThreejsLogo, {
@@ -6301,29 +6793,51 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 539,
+                    lineNumber: 699,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
         {
-            name: "TypeScript",
-            glowColor: "rgba(49, 120, 198, 0.4)",
-            bgGradient: "radial-gradient(circle at 50% 35%, rgba(49, 120, 198, 0.22), #020a14 75%)",
-            textColor: "text-[#5da0ed] font-sans font-bold",
+            name: "Micro-interactions",
+            glowColor: "rgba(168, 85, 247, 0.4)",
+            bgGradient: "radial-gradient(circle at 50% 35%, rgba(168, 85, 247, 0.22), #0c0514 75%)",
+            textColor: "text-[#c084fc] font-sans font-bold",
             customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "font-sans text-sm font-bold text-[#5da0ed]",
-                children: "TypeScript"
+                className: "font-sans text-[11px] font-bold text-[#c084fc]",
+                children: "Micro-interactions"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 546,
+                lineNumber: 706,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
-            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TypeScriptLogo, {
-                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(49,120,198,0.7)]",
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MicroInteractionsLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(168,85,247,0.7)]",
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 547,
+                    lineNumber: 707,
+                    columnNumber: 24
+                }, ("TURBOPACK compile-time value", void 0))
+        },
+        {
+            name: "CSS Animations",
+            glowColor: "rgba(38, 77, 228, 0.4)",
+            bgGradient: "radial-gradient(circle at 50% 35%, rgba(38, 77, 228, 0.22), #020510 75%)",
+            textColor: "text-[#6d8df5] font-sans font-bold",
+            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "font-sans text-sm font-bold text-[#6d8df5]",
+                children: "CSS Animations"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 714,
+                columnNumber: 20
+            }, ("TURBOPACK compile-time value", void 0)),
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CssAnimationsLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(38,77,228,0.7)]",
+                    ...props
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 715,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         }
@@ -6339,7 +6853,7 @@ const SERVICE_TECH_MAP = {
                 children: "Cursor AI"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 556,
+                lineNumber: 724,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CursorAiLogo, {
@@ -6347,7 +6861,7 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 557,
+                    lineNumber: 725,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
@@ -6361,7 +6875,7 @@ const SERVICE_TECH_MAP = {
                 children: "Antigravity"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 564,
+                lineNumber: 732,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AntigravityAiLogo, {
@@ -6369,7 +6883,29 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 565,
+                    lineNumber: 733,
+                    columnNumber: 24
+                }, ("TURBOPACK compile-time value", void 0))
+        },
+        {
+            name: "Kiro AI",
+            glowColor: "rgba(255, 150, 50, 0.4)",
+            bgGradient: "radial-gradient(circle at 50% 35%, rgba(255, 150, 50, 0.22), #0e0803 75%)",
+            textColor: "text-[#ff9632] font-sans font-bold",
+            customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "font-sans text-sm font-bold text-[#ff9632]",
+                children: "Kiro AI"
+            }, void 0, false, {
+                fileName: "[project]/src/components/TechLogos.tsx",
+                lineNumber: 740,
+                columnNumber: 20
+            }, ("TURBOPACK compile-time value", void 0)),
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(KiroAiLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(255,150,50,0.7)]",
+                    ...props
+                }, void 0, false, {
+                    fileName: "[project]/src/components/TechLogos.tsx",
+                    lineNumber: 741,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
@@ -6383,7 +6919,7 @@ const SERVICE_TECH_MAP = {
                 children: "Python"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 572,
+                lineNumber: 748,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
             icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(PythonLogo, {
@@ -6391,29 +6927,29 @@ const SERVICE_TECH_MAP = {
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 573,
+                    lineNumber: 749,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         },
         {
-            name: "HTML5 / CSS3",
-            glowColor: "rgba(241, 101, 41, 0.4)",
-            bgGradient: "radial-gradient(circle at 50% 35%, rgba(241, 101, 41, 0.22), #0e0502 75%)",
-            textColor: "text-white font-sans font-bold",
+            name: "OpenAI API / LLMs",
+            glowColor: "rgba(16, 163, 127, 0.4)",
+            bgGradient: "radial-gradient(circle at 50% 35%, rgba(16, 163, 127, 0.22), #020e0a 75%)",
+            textColor: "text-[#10a37f] font-sans font-bold",
             customLabel: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "font-sans text-sm font-bold text-white",
-                children: "HTML5/CSS3"
+                className: "font-sans text-sm font-bold text-[#10a37f]",
+                children: "OpenAI / LLMs"
             }, void 0, false, {
                 fileName: "[project]/src/components/TechLogos.tsx",
-                lineNumber: 580,
+                lineNumber: 756,
                 columnNumber: 20
             }, ("TURBOPACK compile-time value", void 0)),
-            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(HtmlCssLogo, {
-                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(241,101,41,0.7)]",
+            icon: (props)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(OpenAiLogo, {
+                    className: "h-9 w-9 drop-shadow-[0_0_12px_rgba(16,163,127,0.7)]",
                     ...props
                 }, void 0, false, {
                     fileName: "[project]/src/components/TechLogos.tsx",
-                    lineNumber: 581,
+                    lineNumber: 757,
                     columnNumber: 24
                 }, ("TURBOPACK compile-time value", void 0))
         }
@@ -6424,20 +6960,25 @@ function getTechIconForTag(tag) {
     if (lower.includes("react")) return ReactLogo;
     if (lower.includes("next")) return NextjsLogo;
     if (lower.includes("tailwind")) return TailwindLogo;
-    if (lower.includes("html") || lower.includes("css")) return HtmlCssLogo;
+    if (lower.includes("html") || lower === "css3") return HtmlCssLogo;
+    if (lower.includes("javascript") || lower === "js") return JavaScriptLogo;
+    if (lower.includes("typescript") || lower === "ts") return TypeScriptLogo;
     if (lower.includes("php")) return PhpLogo;
     if (lower.includes("laravel")) return LaravelLogo;
     if (lower.includes("node")) return NodejsLogo;
     if (lower.includes("firebase")) return FirebaseLogo;
+    if (lower.includes("mysql") || lower.includes("database")) return MySqlLogo;
     if (lower.includes("gsap")) return GsapLogo;
     if (lower.includes("framer")) return FramerMotionLogo;
     if (lower.includes("three")) return ThreejsLogo;
+    if (lower.includes("micro-interaction") || lower.includes("micro interaction")) return MicroInteractionsLogo;
+    if (lower.includes("css animation")) return CssAnimationsLogo;
     if (lower.includes("cursor")) return CursorAiLogo;
     if (lower.includes("antigravity")) return AntigravityAiLogo;
-    if (lower.includes("kiro") || lower.includes("ai")) return AntigravityAiLogo;
-    if (lower.includes("type") || lower.includes("ts")) return TypeScriptLogo;
-    if (lower.includes("java")) return JavaLogo;
+    if (lower.includes("kiro")) return KiroAiLogo;
+    if (lower.includes("openai") || lower.includes("llm")) return OpenAiLogo;
     if (lower.includes("python")) return PythonLogo;
+    if (lower.includes("java")) return JavaLogo;
     return null;
 }
 }),

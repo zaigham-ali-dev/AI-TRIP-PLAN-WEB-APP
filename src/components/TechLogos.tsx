@@ -375,6 +375,146 @@ export function PythonLogo({ className = "w-6 h-6", size }: LogoProps) {
   );
 }
 
+export function JavaScriptLogo({ className = "w-6 h-6", size }: LogoProps) {
+  return (
+    <svg
+      viewBox="0 0 32 32"
+      className={className}
+      style={size ? { width: size, height: size } : undefined}
+      fill="none"
+    >
+      <rect width="32" height="32" rx="4" fill="#F7DF1E" />
+      <path
+        d="M21.2 24.4c.8 1.2 1.8 2.1 3.6 2.1 1.5 0 2.5-.8 2.5-1.8 0-1.3-.7-1.7-2.5-2.5l-.9-.4c-2.5-1.1-4.1-2.4-4.1-5.2 0-2.6 2-4.6 5.1-4.6 2.2 0 3.8.8 4.9 2.8L27 16.7c-.6-1.1-1.3-1.5-2.3-1.5-1 0-1.7.7-1.7 1.5 0 1 .7 1.5 2.2 2.1l.9.4c2.9 1.3 4.6 2.5 4.6 5.4 0 3.1-2.4 4.8-5.6 4.8-3.1 0-5.2-1.5-6.2-3.5l2.3-1.5zM9.1 24.7c.6 1 1.1 1.8 2.4 1.8 1.2 0 2-.5 2-2.4v-12h2.8v12.1c0 3.9-2.3 5.7-5.6 5.7-3 0-4.7-1.6-5.6-3.4l2-1.8z"
+        fill="#323330"
+      />
+    </svg>
+  );
+}
+
+export function KiroAiLogo({ className = "w-6 h-6", size }: LogoProps) {
+  return (
+    <svg
+      viewBox="0 0 32 32"
+      className={className}
+      style={size ? { width: size, height: size } : undefined}
+      fill="none"
+    >
+      <rect width="32" height="32" rx="8" fill="#0d1117" stroke="rgba(255,150,50,0.4)" strokeWidth="1.5" />
+      <path
+        d="M10 8v16M10 16l6-6M10 16l6 6"
+        stroke="url(#kiro_grad)"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle cx="22" cy="12" r="2" fill="#ff9632" />
+      <circle cx="22" cy="20" r="1.5" fill="#ff9632" opacity="0.6" />
+      <defs>
+        <linearGradient id="kiro_grad" x1="10" y1="8" x2="16" y2="22" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#ff9632" />
+          <stop offset="1" stopColor="#ff5e00" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}
+
+export function OpenAiLogo({ className = "w-6 h-6", size }: LogoProps) {
+  return (
+    <svg
+      viewBox="0 0 32 32"
+      className={className}
+      style={size ? { width: size, height: size } : undefined}
+      fill="none"
+    >
+      <circle cx="16" cy="16" r="14" fill="#0d1117" stroke="rgba(16,163,127,0.4)" strokeWidth="1.5" />
+      <path
+        d="M16 6c-3.5 0-6.4 1.9-7.8 4.8-.3.6-.1 1.2.3 1.6l5 4.5c.4.3.9.3 1.3 0l5-4.5c.4-.4.6-1 .3-1.6C18.8 7.9 17.5 6 16 6z"
+        fill="#10a37f"
+      />
+      <path
+        d="M8.5 13c-.8 1.5-1 3.2-.5 4.8.5 1.8 1.8 3.3 3.5 4.2.5.3 1.1.1 1.4-.3l3-5.5c.2-.4.1-.9-.2-1.2L11 11.5c-.4-.3-1-.4-1.5-.1-.4.3-.7.9-1 1.6z"
+        fill="#10a37f"
+        opacity="0.8"
+      />
+      <path
+        d="M23.5 13c.8 1.5 1 3.2.5 4.8-.5 1.8-1.8 3.3-3.5 4.2-.5.3-1.1.1-1.4-.3l-3-5.5c-.2-.4-.1-.9.2-1.2L21 11.5c.4-.3 1-.4 1.5-.1.4.3.7.9 1 1.6z"
+        fill="#10a37f"
+        opacity="0.6"
+      />
+    </svg>
+  );
+}
+
+export function MySqlLogo({ className = "w-6 h-6", size }: LogoProps) {
+  return (
+    <svg
+      viewBox="0 0 32 32"
+      className={className}
+      style={size ? { width: size, height: size } : undefined}
+      fill="none"
+    >
+      <ellipse cx="16" cy="10" rx="11" ry="5" fill="#00758F" opacity="0.9" />
+      <path d="M5 10v12c0 2.8 4.9 5 11 5s11-2.2 11-5V10" stroke="#00758F" strokeWidth="2" fill="none" />
+      <path d="M5 16c0 2.8 4.9 5 11 5s11-2.2 11-5" stroke="#00758F" strokeWidth="1.5" fill="none" opacity="0.6" />
+      <path
+        d="M10 18v4.5M13 17.5v5M16 17v5.5M19 17.5v5M22 18v4.5"
+        stroke="#F29111"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function MicroInteractionsLogo({ className = "w-6 h-6", size }: LogoProps) {
+  return (
+    <svg
+      viewBox="0 0 32 32"
+      className={className}
+      style={size ? { width: size, height: size } : undefined}
+      fill="none"
+    >
+      <rect width="32" height="32" rx="8" fill="#0d1117" stroke="rgba(168,85,247,0.3)" strokeWidth="1.5" />
+      <circle cx="16" cy="16" r="4" fill="url(#micro_grad)" />
+      <circle cx="16" cy="16" r="7" stroke="#a855f7" strokeWidth="1" opacity="0.5" strokeDasharray="3 3" />
+      <circle cx="16" cy="16" r="10" stroke="#a855f7" strokeWidth="0.8" opacity="0.3" strokeDasharray="2 4" />
+      <circle cx="24" cy="10" r="1.5" fill="#c084fc" opacity="0.7" />
+      <circle cx="8" cy="22" r="1" fill="#c084fc" opacity="0.5" />
+      <defs>
+        <radialGradient id="micro_grad" cx="16" cy="16" r="4" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#c084fc" />
+          <stop offset="1" stopColor="#7c3aed" />
+        </radialGradient>
+      </defs>
+    </svg>
+  );
+}
+
+export function CssAnimationsLogo({ className = "w-6 h-6", size }: LogoProps) {
+  return (
+    <svg
+      viewBox="0 0 32 32"
+      className={className}
+      style={size ? { width: size, height: size } : undefined}
+      fill="none"
+    >
+      <rect width="32" height="32" rx="8" fill="#264de4" />
+      <path
+        d="M8 8l1.5 16 6.5 2.5 6.5-2.5 1.5-16H8z"
+        fill="#2965f1"
+      />
+      <path
+        d="M16 10v14l4.5-1.8 1-10.2H14l.2 2h5.3l-.3 3.5-3.2 1.2-3.2-1.2-.2-2.5h2l.1 1.2 1.3.5 1.3-.5.2-2H12l-.3-4.2H16z"
+        fill="white"
+      />
+      <path d="M24 6l-2 2 2 2" stroke="#ffd700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M27 6l-2 2 2 2" stroke="#ffd700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.5" />
+    </svg>
+  );
+}
+
 /* ------------------------------------------------------------------ */
 /* Seamless 4-Quadrant Photo-Identical Collage Component              */
 /* ------------------------------------------------------------------ */
@@ -451,32 +591,44 @@ export const SERVICE_TECH_MAP: Record<string, TechItem[]> = {
       icon: (props) => <ReactLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(0,216,255,0.7)]" {...props} />,
     },
     {
-      name: "Java",
-      glowColor: "rgba(234, 45, 46, 0.4)",
-      bgGradient: "radial-gradient(circle at 60% 30%, rgba(234, 45, 46, 0.22), #0c0404 75%)",
-      textColor: "text-[#ea2d2e] font-sans font-bold",
-      customLabel: (
-        <span className="font-sans text-sm font-bold tracking-tight text-[#ea2d2e]">
-          Java<span className="text-[9px] align-top text-[#ea2d2e]/80">™</span>
-        </span>
-      ),
-      icon: (props) => <JavaLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(234,45,46,0.6)]" {...props} />,
-    },
-    {
-      name: "tailwind css",
-      glowColor: "rgba(56, 189, 248, 0.4)",
-      bgGradient: "radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.22), #020b10 75%)",
-      textColor: "text-white font-sans font-bold lowercase",
-      customLabel: <span className="font-sans text-sm font-bold text-white lowercase">tailwind css</span>,
-      icon: (props) => <TailwindLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(56,189,248,0.7)]" {...props} />,
-    },
-    {
-      name: "NEXT.JS",
+      name: "Next.js",
       glowColor: "rgba(255, 255, 255, 0.3)",
       bgGradient: "radial-gradient(circle at 65% 35%, rgba(255, 255, 255, 0.16), #050507 75%)",
       textColor: "text-white font-sans font-bold uppercase tracking-wider",
       customLabel: <span className="font-sans text-sm font-bold tracking-wider text-white uppercase">NEXT<span className="text-white/60">.JS</span></span>,
       icon: (props) => <NextjsLogo className="h-9 w-9 drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]" {...props} />,
+    },
+    {
+      name: "Tailwind CSS",
+      glowColor: "rgba(56, 189, 248, 0.4)",
+      bgGradient: "radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.22), #020b10 75%)",
+      textColor: "text-white font-sans font-bold",
+      customLabel: <span className="font-sans text-sm font-bold text-white">Tailwind CSS</span>,
+      icon: (props) => <TailwindLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(56,189,248,0.7)]" {...props} />,
+    },
+    {
+      name: "HTML/CSS3",
+      glowColor: "rgba(241, 101, 41, 0.4)",
+      bgGradient: "radial-gradient(circle at 50% 35%, rgba(241, 101, 41, 0.22), #0e0502 75%)",
+      textColor: "text-white font-sans font-bold",
+      customLabel: <span className="font-sans text-sm font-bold text-white">HTML/CSS3</span>,
+      icon: (props) => <HtmlCssLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(241,101,41,0.7)]" {...props} />,
+    },
+    {
+      name: "JavaScript",
+      glowColor: "rgba(247, 223, 30, 0.4)",
+      bgGradient: "radial-gradient(circle at 50% 35%, rgba(247, 223, 30, 0.22), #0e0d02 75%)",
+      textColor: "text-[#f7df1e] font-sans font-bold",
+      customLabel: <span className="font-sans text-sm font-bold text-[#f7df1e]">JavaScript</span>,
+      icon: (props) => <JavaScriptLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(247,223,30,0.7)]" {...props} />,
+    },
+    {
+      name: "TypeScript",
+      glowColor: "rgba(49, 120, 198, 0.4)",
+      bgGradient: "radial-gradient(circle at 50% 35%, rgba(49, 120, 198, 0.22), #020a14 75%)",
+      textColor: "text-[#5da0ed] font-sans font-bold",
+      customLabel: <span className="font-sans text-sm font-bold text-[#5da0ed]">TypeScript</span>,
+      icon: (props) => <TypeScriptLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(49,120,198,0.7)]" {...props} />,
     },
   ],
   "02": [
@@ -512,6 +664,14 @@ export const SERVICE_TECH_MAP: Record<string, TechItem[]> = {
       customLabel: <span className="font-sans text-sm font-bold text-[#ffca28]">Firebase</span>,
       icon: (props) => <FirebaseLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(255,160,0,0.7)]" {...props} />,
     },
+    {
+      name: "MySQL / Database",
+      glowColor: "rgba(0, 117, 143, 0.4)",
+      bgGradient: "radial-gradient(circle at 50% 35%, rgba(0, 117, 143, 0.22), #020a0e 75%)",
+      textColor: "text-[#00a4c7] font-sans font-bold",
+      customLabel: <span className="font-sans text-sm font-bold text-[#00a4c7]">MySQL</span>,
+      icon: (props) => <MySqlLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(0,117,143,0.7)]" {...props} />,
+    },
   ],
   "03": [
     {
@@ -539,12 +699,20 @@ export const SERVICE_TECH_MAP: Record<string, TechItem[]> = {
       icon: (props) => <ThreejsLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(216,255,62,0.6)]" {...props} />,
     },
     {
-      name: "TypeScript",
-      glowColor: "rgba(49, 120, 198, 0.4)",
-      bgGradient: "radial-gradient(circle at 50% 35%, rgba(49, 120, 198, 0.22), #020a14 75%)",
-      textColor: "text-[#5da0ed] font-sans font-bold",
-      customLabel: <span className="font-sans text-sm font-bold text-[#5da0ed]">TypeScript</span>,
-      icon: (props) => <TypeScriptLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(49,120,198,0.7)]" {...props} />,
+      name: "Micro-interactions",
+      glowColor: "rgba(168, 85, 247, 0.4)",
+      bgGradient: "radial-gradient(circle at 50% 35%, rgba(168, 85, 247, 0.22), #0c0514 75%)",
+      textColor: "text-[#c084fc] font-sans font-bold",
+      customLabel: <span className="font-sans text-[11px] font-bold text-[#c084fc]">Micro-interactions</span>,
+      icon: (props) => <MicroInteractionsLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(168,85,247,0.7)]" {...props} />,
+    },
+    {
+      name: "CSS Animations",
+      glowColor: "rgba(38, 77, 228, 0.4)",
+      bgGradient: "radial-gradient(circle at 50% 35%, rgba(38, 77, 228, 0.22), #020510 75%)",
+      textColor: "text-[#6d8df5] font-sans font-bold",
+      customLabel: <span className="font-sans text-sm font-bold text-[#6d8df5]">CSS Animations</span>,
+      icon: (props) => <CssAnimationsLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(38,77,228,0.7)]" {...props} />,
     },
   ],
   "04": [
@@ -565,6 +733,14 @@ export const SERVICE_TECH_MAP: Record<string, TechItem[]> = {
       icon: (props) => <AntigravityAiLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(216,255,62,0.7)]" {...props} />,
     },
     {
+      name: "Kiro AI",
+      glowColor: "rgba(255, 150, 50, 0.4)",
+      bgGradient: "radial-gradient(circle at 50% 35%, rgba(255, 150, 50, 0.22), #0e0803 75%)",
+      textColor: "text-[#ff9632] font-sans font-bold",
+      customLabel: <span className="font-sans text-sm font-bold text-[#ff9632]">Kiro AI</span>,
+      icon: (props) => <KiroAiLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(255,150,50,0.7)]" {...props} />,
+    },
+    {
       name: "Python",
       glowColor: "rgba(55, 118, 171, 0.4)",
       bgGradient: "radial-gradient(circle at 50% 35%, rgba(55, 118, 171, 0.22), #03080e 75%)",
@@ -573,12 +749,12 @@ export const SERVICE_TECH_MAP: Record<string, TechItem[]> = {
       icon: (props) => <PythonLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(55,118,171,0.7)]" {...props} />,
     },
     {
-      name: "HTML5 / CSS3",
-      glowColor: "rgba(241, 101, 41, 0.4)",
-      bgGradient: "radial-gradient(circle at 50% 35%, rgba(241, 101, 41, 0.22), #0e0502 75%)",
-      textColor: "text-white font-sans font-bold",
-      customLabel: <span className="font-sans text-sm font-bold text-white">HTML5/CSS3</span>,
-      icon: (props) => <HtmlCssLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(241,101,41,0.7)]" {...props} />,
+      name: "OpenAI API / LLMs",
+      glowColor: "rgba(16, 163, 127, 0.4)",
+      bgGradient: "radial-gradient(circle at 50% 35%, rgba(16, 163, 127, 0.22), #020e0a 75%)",
+      textColor: "text-[#10a37f] font-sans font-bold",
+      customLabel: <span className="font-sans text-sm font-bold text-[#10a37f]">OpenAI / LLMs</span>,
+      icon: (props) => <OpenAiLogo className="h-9 w-9 drop-shadow-[0_0_12px_rgba(16,163,127,0.7)]" {...props} />,
     },
   ],
 };
@@ -588,19 +764,24 @@ export function getTechIconForTag(tag: string): React.ComponentType<LogoProps> |
   if (lower.includes("react")) return ReactLogo;
   if (lower.includes("next")) return NextjsLogo;
   if (lower.includes("tailwind")) return TailwindLogo;
-  if (lower.includes("html") || lower.includes("css")) return HtmlCssLogo;
+  if (lower.includes("html") || lower === "css3") return HtmlCssLogo;
+  if (lower.includes("javascript") || lower === "js") return JavaScriptLogo;
+  if (lower.includes("typescript") || lower === "ts") return TypeScriptLogo;
   if (lower.includes("php")) return PhpLogo;
   if (lower.includes("laravel")) return LaravelLogo;
   if (lower.includes("node")) return NodejsLogo;
   if (lower.includes("firebase")) return FirebaseLogo;
+  if (lower.includes("mysql") || lower.includes("database")) return MySqlLogo;
   if (lower.includes("gsap")) return GsapLogo;
   if (lower.includes("framer")) return FramerMotionLogo;
   if (lower.includes("three")) return ThreejsLogo;
+  if (lower.includes("micro-interaction") || lower.includes("micro interaction")) return MicroInteractionsLogo;
+  if (lower.includes("css animation")) return CssAnimationsLogo;
   if (lower.includes("cursor")) return CursorAiLogo;
   if (lower.includes("antigravity")) return AntigravityAiLogo;
-  if (lower.includes("kiro") || lower.includes("ai")) return AntigravityAiLogo;
-  if (lower.includes("type") || lower.includes("ts")) return TypeScriptLogo;
-  if (lower.includes("java")) return JavaLogo;
+  if (lower.includes("kiro")) return KiroAiLogo;
+  if (lower.includes("openai") || lower.includes("llm")) return OpenAiLogo;
   if (lower.includes("python")) return PythonLogo;
+  if (lower.includes("java")) return JavaLogo;
   return null;
 }
