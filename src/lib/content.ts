@@ -307,8 +307,8 @@ export const PROFILE = {
   phone: "03144713908",
   phoneHref: "tel:+923144713908",
   location: "Gulistan-e-Johar Block 14, Karachi, Pakistan",
-  github: "https://github.com/Zaigham-Ali-cyber",
-  githubLabel: "github.com/Zaigham-Ali-cyber",
+  github: "https://github.com/zaigham-ali-dev",
+  githubLabel: "github.com/zaigham-ali-dev",
   overview:
     "Motivated Web Developer with a strong foundation in full stack development, looking to excel in a challenging Full Stack Web Developer role.",
   overviewLong:
